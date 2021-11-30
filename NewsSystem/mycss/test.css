@@ -1,0 +1,382 @@
+/* 公共样式 */
+/* common */
+/* 清除浮动对元素的影响 */
+.clear::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+ul,
+li {
+    list-style: none;
+    padding-left: 0;
+}
+li,
+p {
+    line-height: 35px;
+}
+a {
+    color: #333;
+}
+a,
+button,
+input {
+    text-decoration: none;
+}
+input:hover {
+    text-decoration: none;
+}
+input,
+button:focus {
+    text-decoration: none;
+}
+h2 {
+    font-weight: normal;
+}
+
+/* 整个页面的样式 */
+.page {
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+}
+
+/* 头部的logo和搜索 */
+.header {
+    width: 99%;
+    height: 80px;
+}
+
+.txlogo {
+    float: left;
+}
+.top_logo {
+    padding-top: 20px;
+    width: 131px;
+    height: 35px;
+    float: left;
+}
+.search {
+    float: left;
+    position: absolute;
+    height: 36px;
+    line-height: 32px;
+    margin: 19px 0 0 392px;
+    border: 1px solid #dfdfdf;
+    background-color: #f3f6f8;
+    border-radius: 50px;
+}
+
+.web {
+    float: left;
+    color: #404040;
+    padding-left: 20px;
+    font-size: 14px;
+    line-height: 37px;
+}
+.top-input {
+    float: left;
+    border: 0;
+    font-size: 14px;
+    line-height: 32px;
+    width: 380px;
+    height: 30px;
+    padding: 4px 15px;
+    background: none;
+    outline: none;
+    vertical-align: middle;
+}
+/* 搜索按钮 */
+.search-btn {
+    position: relative;
+    top: -1px;
+    right: -1px;
+    background: none;
+    border: none;
+    height: 38px;
+    width: 126px;
+    line-height: 34px;
+    padding: 0 23px;
+    color: #fff;
+    background-color: #1479d7;
+    border-radius: 50px;
+    font-size: 16px;
+}
+
+.top-login {
+    float: right;
+    margin: 22px 0 0;
+}
+/* 图标 */
+.icon {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    padding: 2px;
+}
+/* 登录按钮 */
+.login-btn {
+    display: inline-block;
+    width: 47px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border: 1px solid #ededed;
+    color: #60a5e4;
+    background-color: #f5f5f5;
+    font-size: 14px;
+    margin-left: 8px;
+}
+
+/* 导航条 */
+.nav {
+    width: 99%;
+    height: 50px;
+    background-color: #1479d7;
+    line-height: 50px;
+    text-align: center;
+    font-size: 1px;
+    border-radius: 3px;
+}
+.nav a {
+    display: inline-block;
+    height: 50px;
+    font-size: 18px;
+    padding: 0 15px;
+    color: #fff;
+    text-decoration: none;
+}
+.nav a:hover {
+    background-color: #cbe1ed;
+    color: #14539a;
+    text-align: center;
+}
+
+/* 下拉箭头样式 */
+.bottom {
+    height: 12px;
+    width: 12px;
+    color: #dfdfdf;
+}
+
+/* 腾讯安全部分 */
+.security {
+    margin: 20px 0;
+    margin-left: 826px;
+    /* display: inline-block; */
+}
+.txsecurity {
+    width: 426px;
+    height: 75px;
+}
+
+/* 新闻列表样式 */
+
+.col {
+    color: #222;
+}
+.col-1 {
+    width: 385px;
+    margin-right: 40px;
+    float: left;
+}
+.col-2 {
+    width: 361px;
+    margin-right: 40px;
+    float: left;
+}
+.col-3 {
+    width: 400px;
+    margin-right: 40px;
+    float: right;
+}
+
+.fl {
+    float: left;
+}
+.news {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+/* .left,
+.middle,
+.right {
+  display: inline-block;
+} */
+
+.left {
+}
+.hd {
+    height: 70px;
+    line-height: 40px;
+    border-bottom: 1px solid #cae0f3;
+}
+.tit {
+    display: inline-block;
+    margin: 0 10px;
+    height: 40px;
+    font-size: 20px;
+}
+.tit-1 {
+    display: inline-block;
+    margin: 22px 10px 0 0;
+    height: 40px;
+    font-size: 20px;
+}
+.tit-2 {
+    display: inline-block;
+    margin: 0px 5px 0 9px;
+    height: 40px;
+    font-size: 12px;
+}
+.weather {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin: -7px 0 0;
+    background-size: 100%;
+    vertical-align: middle;
+}
+.txt {
+    display: inline-block;
+    margin: 0 10px 0 0;
+    font-size: 12px;
+}
+
+/* 标题分割线 */
+.tit-line {
+    display: inline-block;
+    width: 2px;
+    height: 18px;
+    border-left: 1.5px solid #e1e1e1;
+    margin: 10px 0 0 0;
+}
+
+/* 新闻内容 */
+.tab-news {
+    font-size: 15px;
+    margin-bottom: 0;
+}
+.bold {
+    font-weight: bold;
+}
+/* 图文混排 */
+.cf {
+    height: 105px;
+}
+.news-pic-txt {
+    padding: 32px 0;
+    border-radius: 2px;
+}
+.news-pic-txt-2 {
+    padding: 0;
+}
+
+.text {
+    margin-left: 13px;
+    position: relative;
+    width: 157px;
+    height: 107px;
+    line-height: 30px;
+}
+.talk {
+    width: 128px;
+    height: 50px;
+}
+
+.kandian-top {
+    margin-top: 23px;
+}
+.play {
+    width: 23px;
+    height: 12px;
+}
+
+/* 右边新闻 */
+/* 产品列表 */
+.product {
+    margin: 8px 0 14px;
+}
+.list {
+    margin-top: 24px;
+    border: 1px solid #cae0f3;
+    /* border-left: none; */
+}
+.f14 {
+    font-size: 13px;
+}
+
+.product .list li {
+    height: 35px;
+    line-height: 40px;
+    /* padding-left: 12px; */
+    border-bottom: 1px solid #cae0f3;
+    overflow: hidden;
+}
+.product .list li a {
+    font-size: 12px;
+    margin: 5px 8px 0 0;
+    padding-left: 8px;
+}
+.prod-1,
+.prod-3 {
+    background-color: #fff;
+    width: 425px;
+}
+.prod-2,
+.prod-4 {
+    background-color: #f5f8fc;
+    width: 425px;
+}
+
+/* 热门赛事部分 */
+.hot-race {
+}
+.hd-hot {
+    height: 43px;
+    width: 428px;
+    line-height: 40px;
+    border-bottom: 1px solid #cae0f3;
+}
+.fr {
+    float: right;
+    width: 303px;
+}
+.time {
+    padding-left: 20px;
+    font-size: 14px;
+    line-height: 45px;
+}
+.tips {
+    color: #64788c;
+    font-size: 14px;
+    /* padding-left: 44px; */
+}
+
+.video-box {
+    margin-top: 163px;
+    height: 220px;
+}
+.poster {
+    /* position: absolute; */
+    margin-top: 23px;
+    border-radius: 4px;
+    height: 255px;
+    width: 428px;
+}
+.poster-txt {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    padding: 10px 0 10px 15px;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 15px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+}
+
+.title-1 {
+    padding-top: 119px;
+}
+

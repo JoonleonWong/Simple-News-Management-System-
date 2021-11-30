@@ -1,0 +1,20 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:jaxws="http://cxf.apache.org/jaxws"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://cxf.apache.org/jaxws
+        http://cxf.apache.org/schemas/jaxws.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+    <!--<import resource="classpath:META-INF/cxf/cxf.xml"/>-->
+    <!--<bean id="hello" class="com.upc.service.HelloWorldImpl"></bean>
+    <jaxws:endpoint id="helloworld" implementor="#hello" address="/hello"></jaxws:endpoint>-->
+    <jaxws:server address="/getLateNews">
+        <jaxws:serviceBean>
+            <bean class="com.upc.sshnews.service.serviceImp.GetLateNewsImp"></bean>
+        </jaxws:serviceBean>
+    </jaxws:server>
+</beans>
